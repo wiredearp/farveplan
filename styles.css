@@ -32,7 +32,6 @@
 	--jotun-7628-treasure: #a3a798; /* https://www.jotun.com/me/en/decorative/interior/colours/7628-treasure-interior */
 	--jotun-7629-antiquegreen: #8a8f81; /* https://www.jotun.com/me/en/decorative/interior/colours/7629-antique-green-interior */
 	--jotun-1624-skylight: #f2f1e8; /* https://www.jotun.com/me/en/decorative/interior/colours/1624-skylight-interior */
-	--jotun-7236-jazzwhite: #f3f4ee; /* https://www.jotun.com/me/en/decorative/interior/colours/7236-jazz-white-interior */
 
 	/* fars */
 	--jotun-20119-transparentpink: #dacec0; /* https://www.jotun.com/dk/da/decorative/interior/colours/20119-transparent-pink-interior */
@@ -49,9 +48,13 @@
 	--jotun-11174-curiousmind: ##b7a992; /* https://www.jotun.com/dk/da/decorative/interior/colours/11174-curious-mind-interior */
 	--jotun-11173-humbleyellow: #d3c5ab; /* https://www.jotun.com/dk/da/decorative/interior/colours/11173-humble-yellow-interior */
 	--jotun-10961-rawcanvas: #beaf97; /* https://www.jotun.com/dk/da/decorative/interior/colours/10961-raw-canvas-interior */
+	--jotun-10679-washedlinen: #c9c3b6; /* https://www.jotun.com/dk/da/decorative/interior/colours/10679-washed-linen-interior */
 
 	/* deco */
-	--jotun-0964-charcoal: #5e6166;
+	--jotun-9938-dempetsort: #494948; /* https://www.jotun.com/dk/da/decorative/exterior/colours/9938-dempet-sort-exterior */
+	--jotun-9917-klassiskhvit: #f0efe9; /* https://www.jotun.com/dk/da/decorative/interior/colours/9918-classic-white-interior */
+	--jotun-7236-jazzwhite: #f3f4ee; /* https://www.jotun.com/me/en/decorative/interior/colours/7236-jazz-white-interior */
+	--jotun-7236-chi: #f3f4ee; /* https://www.jotun.com/dk/da/decorative/interior/colours/7236-jazz-white-interior */
 }
 
 :root {
@@ -61,8 +64,8 @@
 	--lokum: var(--jotun-10678-space);
 	--kajs: var(--jotun-8118-lovsal);
 	--fars: var(--jotun-20119-transparentpink);
-	--dark: var(--jotun-0964-charcoal);
-	--light: var(--jotun-7236-jazzwhite);
+	--dark: var(--jotun-9938-dempetsort);
+	--light: var(--jotun-7236-chi);
 }
 
 .gangen {

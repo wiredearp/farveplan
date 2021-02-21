@@ -1,0 +1,152 @@
+@font-face {
+  font-family: 'Inter var experimental';
+	font-display: swap;
+  font-weight: 100 900;
+  font-style: oblique 0deg -10deg;
+  font-named-instance: 'Regular';
+  src: url("fonts/Inter/Inter.var.woff2") format("woff2-variations"),
+       url("fonts/Inter/Inter.var.woff2") format("woff2");
+}
+
+/* https://www.jotun.com/me/en/decorative/interior/colours/colourcards/jotun-colour-collection-identity */
+
+:root {
+
+	/* gangen */
+	--jotun-0486-silke: #eae7db; /* https://www.jotun.com/dk/da/decorative/interior/colours/0486-early-rain-interior */
+	--jotun-1624-letthet: #f2f1e8; /* https://www.jotun.com/dk/da/decorative/interior/colours/1624-skylight-interior */
+	--jotun-1024-tidslos: #e0ddd2; /* https://www.jotun.com/dk/da/decorative/interior/colours/1024-timeless-interior */	
+
+	/* allroom */
+	--jotun-1973-antikgra: #bebcb2; /* https://www.jotun.com/dk/da/decorative/interior/colours/1973-objective-interior */
+	--jotun-1391-lysantikgra: #d4d3c8; /* https://www.jotun.com/dk/da/decorative/interior/colours/1391-bare-interior */
+	--jotin-9915-morgendis: #d4d4cf; /* https://www.jotun.com/dk/da/decorative/interior/colours/9915-oxford-river-interior */
+
+	/* stuen */
+	--jotun-1276-soft: #dcd1ba; /* https://www.jotun.com/dk/da/decorative/interior/colours/1276-soft-interior */
+	--jotun-10678-space: #d6cfbf; /* https://www.jotun.com/dk/da/decorative/interior/colours/10678-space-interior */
+	
+	/* kajs */
+	--jotun-8118-lovsal: #c5c6b8; /* https://www.jotun.com/dk/da/decorative/interior/colours/8118-crisp-interior */
+	--jotun-7629-refresh: #cacfc3; /* https://www.jotun.com/me/en/decorative/interior/colours/7627-refresh-interior */
+	--jotun-7628-treasure: #a3a798; /* https://www.jotun.com/me/en/decorative/interior/colours/7628-treasure-interior */
+	--jotun-7629-antiquegreen: #8a8f81; /* https://www.jotun.com/me/en/decorative/interior/colours/7629-antique-green-interior */
+	--jotun-1624-skylight: #f2f1e8; /* https://www.jotun.com/me/en/decorative/interior/colours/1624-skylight-interior */
+	--jotun-7236-jazzwhite: #f3f4ee; /* https://www.jotun.com/me/en/decorative/interior/colours/7236-jazz-white-interior */
+
+	/* fars */
+	--jotun-20119-transparentpink: #dacec0; /* https://www.jotun.com/dk/da/decorative/interior/colours/20119-transparent-pink-interior */
+	--jotun-12806-rusticpink: #cab7a7; /* https://www.jotun.com/dk/da/decorative/interior/colours/12086-rustic-pink-interior */
+	--jotun-12120-desertpink: #bf9f86; /* https://www.jotun.com/me/en/decorative/interior/colours/12120-desert-pink-interior */
+	--jotun-12083-devine: #d2bea9; /* https://www.jotun.com/me/en/decorative/interior/colours/12083-devine-interior */
+	--jotun-2024-senses: #bea795; /* https://www.jotun.com/dk/da/decorative/interior/colours/2024-senses-interior */
+
+	/* lokum */
+	--jotun-12079-gleam: #e4dbc4; /* https://www.jotun.com/me/en/decorative/interior/colours/12079-gleam-interior */
+	--jotun-12080-softradience: #d9ccaf; /* https://www.jotun.com/me/en/decorative/interior/colours/12080-soft-radiance-interior */
+	--jotun-12176-silhouette: #bfb49c; /* https://www.jotun.com/no/no/decorative/interior/colours/12126-silhouette-interior */
+	--jotun-1303-observe: #cebda2; /* https://www.jotun.com/me/en/decorative/interior/colours/1303-observe-interior */
+	--jotun-11174-curiousmind: ##b7a992; /* https://www.jotun.com/dk/da/decorative/interior/colours/11174-curious-mind-interior */
+	--jotun-11173-humbleyellow: #d3c5ab; /* https://www.jotun.com/dk/da/decorative/interior/colours/11173-humble-yellow-interior */
+	--jotun-10961-rawcanvas: #beaf97; /* https://www.jotun.com/dk/da/decorative/interior/colours/10961-raw-canvas-interior */
+
+	/* deco */
+	--jotun-0964-charcoal: #5e6166;
+}
+
+:root {
+	--stuen: var(--jotun-1276-soft);
+	--allroom: var(--jotin-9915-morgendis);
+	--gangen: var(--jotun-1024-tidslos); /* skabene var(--jotun-0486-silke) */
+	--lokum: var(--jotun-10678-space);
+	--kajs: var(--jotun-8118-lovsal);
+	--fars: var(--jotun-20119-transparentpink);
+	--dark: var(--jotun-0964-charcoal);
+	--light: var(--jotun-7236-jazzwhite);
+}
+
+.gangen {
+	background-color: var(--gangen);
+}
+.allroom {
+	background-color: var(--allroom);
+}
+.stuen {
+	background-color: var(--stuen);
+}
+.kajs {
+	/* https://www.jotun.com/dk/da/decorative/interior/inspiration/livingroom/jotun-8118-crisp-6379-cityscape-12123-contemporary-white-20162-mellow */
+	background-color: var(--kajs);
+}
+.lokum {
+	background-color: var(--lokum);
+}
+.fars {
+	background-color: var(--fars);
+}
+
+/* .......................................................................... */
+
+*,
+*:before,
+*:after {
+	box-sizing: content-box;
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+	min-height: 100vh;
+}
+
+body {
+	font-family: "Inter var experimental", sans-serif;
+}
+section {
+	min-height: 100vh;
+	position: relative;
+}
+section:not(:last-child) {
+	border-bottom: 1px solid var(--dark);
+}
+nav {
+	display: grid;
+	min-height: 100vh;
+	grid-template-columns: 1fr 1fr 1fr;
+	background-color: var(--dark);
+	list-style: none;
+	grid-column-gap: 1px;
+	grid-row-gap: 1px;
+}
+nav a {
+	text-decoration: none;
+	position: relative;
+	color: var(--dark);
+	font-size: 24px;
+}
+nav a span {
+	position: absolute;
+	bottom: 12%;
+	right: 12%;
+}
+img {
+	display: block;
+}
+picture {
+	display: inline-block;
+	background-color: var(--light);
+	box-shadow: 8px 8px 24px rgba(0,0,0,0.25);
+	border-radius: 2px;
+	padding: 20px;
+	padding-bottom: 80px;
+	position: absolute;
+	bottom: 10vh;
+	right: 10vw;
+	
+}
+picture img {
+	max-width: 40vw;
+	max-height: calc(80vh - 80px);
+	border-radius: 2px;
+}

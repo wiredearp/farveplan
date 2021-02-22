@@ -21,6 +21,7 @@
 	--jotun-1973-antikgra: #bebcb2; /* https://www.jotun.com/dk/da/decorative/interior/colours/1973-objective-interior */
 	--jotun-1391-lysantikgra: #d4d3c8; /* https://www.jotun.com/dk/da/decorative/interior/colours/1391-bare-interior */
 	--jotin-9915-morgendis: #d4d4cf; /* https://www.jotun.com/dk/da/decorative/interior/colours/9915-oxford-river-interior */
+	--jotun-10341-kalk: #d9d3c7; /* https://www.jotun.com/dk/da/decorative/interior/colours/10341-limestone-interior */
 
 	/* stuen */
 	--jotun-1276-soft: #dcd1ba; /* https://www.jotun.com/dk/da/decorative/interior/colours/1276-soft-interior */
@@ -58,12 +59,12 @@
 }
 
 :root {
-	--stuen: var(--jotun-1276-soft);
-	--allroom: var(--jotin-9915-morgendis);
 	--gangen: var(--jotun-1024-tidslos); /* skabene var(--jotun-0486-silke) */
-	--lokum: var(--jotun-10678-space);
+	--allroom: var(--jotin-9915-morgendis); /* --jotin-9915-morgendis */
+	--stuen: var(--jotun-1276-soft);
 	--kajs: var(--jotun-8118-lovsal);
 	--fars: var(--jotun-20119-transparentpink);
+	--lokum: var(--jotun-10678-space);
 	--dark: var(--jotun-9938-dempetsort);
 	--light: var(--jotun-7236-chi);
 }
@@ -136,18 +137,22 @@ nav a span {
 img {
 	display: block;
 }
-picture {
+
+figure {
 	display: inline-block;
 	background-color: var(--light);
 	box-shadow: 8px 8px 24px rgba(0,0,0,0.25);
 	border-radius: 2px;
 	padding: 20px;
-	padding-bottom: 80px;
 	position: absolute;
 	bottom: 10vh;
 	right: 10vw;
-	
+	margin: 0;
 }
+figcaption {
+	padding-top: 20px;
+}
+picture,
 picture img {
 	max-width: 40vw;
 	max-height: calc(80vh - 80px);

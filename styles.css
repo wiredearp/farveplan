@@ -60,14 +60,15 @@
 }
 
 :root {
-	--gangen: var(--jotun-1024-tidslos); /* skabene var(--jotun-0486-silke) */
-	--allroom: var(--jotin-9915-morgendis); /* ----jotun-8470-smoothwhite */
+	--gangen: var(--jotun-1024-tidslos);
+	--allroom: var(--jotin-9915-morgendis);
 	--stuen: var(--jotun-1276-soft);
 	--kajs: var(--jotun-8118-lovsal);
 	--fars: var(--jotun-20119-transparentpink);
 	--lokum: var(--jotun-10678-space);
 	--dark: var(--jotun-9938-dempetsort);
 	--light: var(--jotun-7236-chi);
+	--height: 100vh; /* tweaked JS */
 }
 
 .gangen {
@@ -97,26 +98,18 @@
 *:after {
 	box-sizing: content-box;
 }
-
-body {
-	scroll-snap-type: mandatory;
-  scroll-snap-points-y: repeat(100vh);
-  scroll-snap-type: y mandatory;
-}
-
 html,
 body {
 	margin: 0;
 	padding: 0;
-	min-height: 100vh;
+	min-height: var(--height);
 }
-
 body {
 	font-family: "Inter var experimental", sans-serif;
 	color: var(--dark);
 }
 section {
-	min-height: 100vh;
+	min-height: var(--height);
 	position: relative;
 }
 section:not(:last-child) {
@@ -124,7 +117,7 @@ section:not(:last-child) {
 }
 nav {
 	display: grid;
-	min-height: 100vh;
+	min-height: var(--height);
 	grid-template-columns: 1fr 1fr 1fr;
 	background-color: var(--dark);
 	list-style: none;
@@ -153,7 +146,7 @@ figure {
 	border-radius: 2px;
 	padding: 20px;
 	position: absolute;
-	bottom: 10vh;
+	bottom: calc(0.1 * var(--height));
 	right: 10vw;
 	margin: 0;
 }
@@ -163,6 +156,6 @@ figcaption {
 picture,
 picture img {
 	max-width: 40vw;
-	max-height: calc(80vh - 80px);
+	max-height: calc(calc(0.8 * var(--height)) - 80px);
 	border-radius: 2px;
 }

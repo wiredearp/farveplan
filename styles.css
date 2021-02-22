@@ -4,8 +4,8 @@
   font-weight: 100 900;
   font-style: oblique 0deg -10deg;
   font-named-instance: 'Regular';
-  src: url("fonts/Inter/Inter.var.woff2") format("woff2-variations"),
-       url("fonts/Inter/Inter.var.woff2") format("woff2");
+  src: url("fonts/Inter.var.woff2") format("woff2-variations"),
+       url("fonts/Inter.var.woff2") format("woff2");
 }
 
 /* https://www.jotun.com/me/en/decorative/interior/colours/colourcards/jotun-colour-collection-identity */
@@ -21,7 +21,7 @@
 	--jotun-1973-antikgra: #bebcb2; /* https://www.jotun.com/dk/da/decorative/interior/colours/1973-objective-interior */
 	--jotun-1391-lysantikgra: #d4d3c8; /* https://www.jotun.com/dk/da/decorative/interior/colours/1391-bare-interior */
 	--jotin-9915-morgendis: #d4d4cf; /* https://www.jotun.com/dk/da/decorative/interior/colours/9915-oxford-river-interior */
-	--jotun-10341-kalk: #d9d3c7; /* https://www.jotun.com/dk/da/decorative/interior/colours/10341-limestone-interior */
+	--jotun-8470-smoothwhite: #cecbc0; /* https://www.jotun.com/dk/da/decorative/interior/colours/8470-smooth-white-interior */
 
 	/* stuen */
 	--jotun-1276-soft: #dcd1ba; /* https://www.jotun.com/dk/da/decorative/interior/colours/1276-soft-interior */
@@ -50,6 +50,7 @@
 	--jotun-11173-humbleyellow: #d3c5ab; /* https://www.jotun.com/dk/da/decorative/interior/colours/11173-humble-yellow-interior */
 	--jotun-10961-rawcanvas: #beaf97; /* https://www.jotun.com/dk/da/decorative/interior/colours/10961-raw-canvas-interior */
 	--jotun-10679-washedlinen: #c9c3b6; /* https://www.jotun.com/dk/da/decorative/interior/colours/10679-washed-linen-interior */
+	--jotun-10341-kalk: #d9d3c7; /* https://www.jotun.com/dk/da/decorative/interior/colours/10341-limestone-interior */
 
 	/* deco */
 	--jotun-9938-dempetsort: #494948; /* https://www.jotun.com/dk/da/decorative/exterior/colours/9938-dempet-sort-exterior */
@@ -60,7 +61,7 @@
 
 :root {
 	--gangen: var(--jotun-1024-tidslos); /* skabene var(--jotun-0486-silke) */
-	--allroom: var(--jotin-9915-morgendis); /* --jotin-9915-morgendis */
+	--allroom: var(--jotin-9915-morgendis); /* ----jotun-8470-smoothwhite */
 	--stuen: var(--jotun-1276-soft);
 	--kajs: var(--jotun-8118-lovsal);
 	--fars: var(--jotun-20119-transparentpink);
@@ -95,6 +96,12 @@
 *:before,
 *:after {
 	box-sizing: content-box;
+}
+
+body {
+	scroll-snap-type: mandatory;
+  scroll-snap-points-y: repeat(100vh);
+  scroll-snap-type: y mandatory;
 }
 
 html,

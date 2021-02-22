@@ -106,6 +106,7 @@ body {
 
 body {
 	font-family: "Inter var experimental", sans-serif;
+	color: var(--dark);
 }
 section {
 	min-height: 100vh;

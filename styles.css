@@ -13,7 +13,6 @@
 :root {
 
 	/* gangen */
-	--jotun-0486-silke: #eae7db; /* https://www.jotun.com/dk/da/decorative/interior/colours/0486-early-rain-interior */
 	--jotun-1624-letthet: #f2f1e8; /* https://www.jotun.com/dk/da/decorative/interior/colours/1624-skylight-interior */
 	--jotun-1024-tidslos: #e0ddd2; /* https://www.jotun.com/dk/da/decorative/interior/colours/1024-timeless-interior */	
 
@@ -25,7 +24,8 @@
 
 	/* stuen */
 	--jotun-1276-soft: #dcd1ba; /* https://www.jotun.com/dk/da/decorative/interior/colours/1276-soft-interior */
-	--jotun-10678-space: #d6cfbf; /* https://www.jotun.com/dk/da/decorative/interior/colours/10678-space-interior */
+	--jotun-1875-sans: #e6dfce; /* https://www.jotun.com/dk/da/decorative/interior/colours/1875-sense-interior */
+	--jotun-0486-silke: #eae7db; /* https://www.jotun.com/dk/da/decorative/interior/colours/0486-early-rain-interior */
 	
 	/* kajs */
 	--jotun-8118-lovsal: #c5c6b8; /* https://www.jotun.com/dk/da/decorative/interior/colours/8118-crisp-interior */
@@ -42,6 +42,7 @@
 	--jotun-2024-senses: #bea795; /* https://www.jotun.com/dk/da/decorative/interior/colours/2024-senses-interior */
 
 	/* lokum */
+	--jotun-10678-space: #d6cfbf; /* https://www.jotun.com/dk/da/decorative/interior/colours/10678-space-interior */
 	--jotun-12079-gleam: #e4dbc4; /* https://www.jotun.com/me/en/decorative/interior/colours/12079-gleam-interior */
 	--jotun-12080-softradience: #d9ccaf; /* https://www.jotun.com/me/en/decorative/interior/colours/12080-soft-radiance-interior */
 	--jotun-12176-silhouette: #bfb49c; /* https://www.jotun.com/no/no/decorative/interior/colours/12126-silhouette-interior */
@@ -99,18 +100,25 @@
 	box-sizing: content-box;
 }
 html,
-body {
+body,
+main {
 	margin: 0;
 	padding: 0;
-	min-height: var(--height);
+	overflow: hidden;
+	height: var(--height);
 }
 body {
 	font-family: "Inter var experimental", sans-serif;
-	color: var(--dark);
+	color: var(--dark);	
+}
+main {
+	overflow: scroll;
+	scroll-snap-type: y mandatory;
 }
 section {
-	min-height: var(--height);
 	position: relative;
+	min-height: var(--height);
+	scroll-snap-align: center;
 }
 section:not(:last-child) {
 	border-bottom: 1px solid var(--dark);
@@ -138,7 +146,6 @@ nav a span {
 img {
 	display: block;
 }
-
 figure {
 	display: inline-block;
 	background-color: var(--light);

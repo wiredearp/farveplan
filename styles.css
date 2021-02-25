@@ -171,14 +171,14 @@ img {
 	max-height: calc(calc(0.8 * var(--height)) - 80px);
 	border-radius: 2px;
 }
-.kajs,
-.fars {
+section.kajs,
+section.fars {
 	background-repeat: no-repeat;
 	background-size: contain;
 }
-.kajs {
+section.kajs {
 	background-image: url('images/kajs/reinsvoll.webp');
 }
-.fars {
+section.fars {
 	background-image: url('images/fars/kirkenes.webp');
 }

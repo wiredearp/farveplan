@@ -28,8 +28,8 @@
 
 
 	/* stuen */
-	--jotun-1276-soft: #dcd1ba; /* https://www.jotun.com/dk/da/decorative/interior/colours/1276-soft-interior */
 	--jotun-1875-sans: #e6dfce; /* https://www.jotun.com/dk/da/decorative/interior/colours/1875-sense-interior */
+	--jotun-1276-soft: #dcd1ba; /* https://www.jotun.com/dk/da/decorative/interior/colours/1276-soft-interior */
 	--jotun-0486-silke: #eae7db; /* https://www.jotun.com/dk/da/decorative/interior/colours/0486-early-rain-interior */
 	
 	/* kajs */
@@ -151,7 +151,7 @@ nav a span {
 img {
 	display: block;
 }
-figure {
+.photo {
 	display: inline-block;
 	background-color: var(--light);
 	box-shadow: 8px 8px 24px rgba(0,0,0,0.25);
@@ -162,12 +162,23 @@ figure {
 	right: 10vw;
 	margin: 0;
 }
-figcaption {
+.photo figcaption {
 	padding-top: 20px;
 }
-picture,
-picture img {
+.photo picture,
+.photo picture img {
 	max-width: 40vw;
 	max-height: calc(calc(0.8 * var(--height)) - 80px);
 	border-radius: 2px;
+}
+.kajs,
+.fars {
+	background-repeat: no-repeat;
+	background-size: contain;
+}
+.kajs {
+	background-image: url('images/kajs/reinsvoll.webp');
+}
+.fars {
+	background-image: url('images/fars/kirkenes.webp');
 }

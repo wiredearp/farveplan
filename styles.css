@@ -125,8 +125,8 @@ section {
 	min-height: var(--height);
 	scroll-snap-align: center;
 }
-section:not(:last-child) {
-	border-bottom: 1px solid var(--dark);
+section:not(:first-child) {
+	border-top: 1px solid var(--dark);
 }
 nav {
 	display: grid;

@@ -31,6 +31,7 @@
 	--jotun-1875-sans: #e6dfce; /* https://www.jotun.com/dk/da/decorative/interior/colours/1875-sense-interior */
 	--jotun-1276-soft: #dcd1ba; /* https://www.jotun.com/dk/da/decorative/interior/colours/1276-soft-interior */
 	--jotun-0486-silke: #eae7db; /* https://www.jotun.com/dk/da/decorative/interior/colours/0486-early-rain-interior */
+	--jotun-12125-impression: #bba78e; /* https://www.jotun.com/no/no/decorative/interior/colours/12125-impression-interior */
 	
 	/* kajs */
 	--jotun-8118-lovsal: #c5c6b8; /* https://www.jotun.com/dk/da/decorative/interior/colours/8118-crisp-interior */
@@ -38,6 +39,9 @@
 	--jotun-7628-treasure: #a3a798; /* https://www.jotun.com/me/en/decorative/interior/colours/7628-treasure-interior */
 	--jotun-7629-antiquegreen: #8a8f81; /* https://www.jotun.com/me/en/decorative/interior/colours/7629-antique-green-interior */
 	--jotun-1624-skylight: #f2f1e8; /* https://www.jotun.com/me/en/decorative/interior/colours/1624-skylight-interior */
+	--jotun-6379-cityscape: #8c9893; /* https://www.jotun.com/dk/da/decorative/interior/colours/6379-cityscape-interior */
+	--jotun-6378-iconic: #a1aba6; /* https://www.jotun.com/dk/da/decorative/interior/colours/6378-iconic-interior */
+	--jotun-12123-contemporarywhite: #e1daca; /* https://www.jotun.com/dk/da/decorative/interior/colours/12123-contemporary-white-interior */
 
 	/* fars */
 	--jotun-20119-transparentpink: #dacec0; /* https://www.jotun.com/dk/da/decorative/interior/colours/20119-transparent-pink-interior */
@@ -67,12 +71,26 @@
 
 :root {
 	--gangen: var(--jotun-1024-tidslos);
-	--allroom: var(--jotun-1027-dempet); /* --jotin-9915-morgendis */
+
+	--allroom: var(--jotun-1027-dempet);
+
 	--stuen: var(--jotun-1276-soft);
+	--stuen-dark: var(--jotun-12125-impression);
+
 	--kajs: var(--jotun-8118-lovsal);
+	--kajs-dark: var(--jotun-6379-cityscape);
+	--kajs-light: var(--jotun-12123-contemporarywhite);
+
 	--fars: var(--jotun-20119-transparentpink);
+	--fars-dark: var(--jotun-12120-desertpink);
+
 	--lokum: var(--jotun-10678-space);
+
 	--dark: var(--jotun-9938-dempetsort);
+
+	
+}
+:root {
 	--light: var(--jotun-7236-chi);
 	--height: 100vh; /* tweaked JS */
 }
@@ -171,6 +189,23 @@ img {
 	max-height: calc(calc(0.8 * var(--height)) - 80px);
 	border-radius: 2px;
 }
+section:before {
+	content: '';
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	width: 31.8vw;
+}
+section.stuen:before {
+	background-color: var(--jotun-12125-impression);
+}
+section.kajs:before {
+	background-color: var(--kajs-dark);
+}
+section.fars:before {
+	background-color: var(--fars-dark);
+}
+/*
 section.kajs,
 section.fars {
 	background-repeat: no-repeat;
@@ -182,3 +217,4 @@ section.kajs {
 section.fars {
 	background-image: url('images/fars/kirkenes.webp');
 }
+*/

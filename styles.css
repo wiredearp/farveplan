@@ -49,6 +49,7 @@
 	--jotun-12120-desertpink: #bf9f86; /* https://www.jotun.com/me/en/decorative/interior/colours/12120-desert-pink-interior */
 	--jotun-12083-devine: #d2bea9; /* https://www.jotun.com/me/en/decorative/interior/colours/12083-devine-interior */
 	--jotun-2024-senses: #bea795; /* https://www.jotun.com/dk/da/decorative/interior/colours/2024-senses-interior */
+	--jotun-2511-moerkkvarts: #bcaba3; /* https://www.jotun.com/dk/da/b2c/colour-inspiration/colours/interior/2930001177501791_Interior.aspx */
 
 	/* lokum */
 	--jotun-10678-space: #d6cfbf; /* https://www.jotun.com/dk/da/decorative/interior/colours/10678-space-interior */
@@ -82,7 +83,7 @@
 	--kajs-light: var(--jotun-12123-contemporarywhite);
 
 	--fars: var(--jotun-20119-transparentpink);
-	--fars-dark: var(--jotun-12120-desertpink);
+	--fars-dark: #bcaba3; 
 
 	--lokum: var(--jotun-10678-space);
 

@@ -51,7 +51,6 @@
 	--jotun-2024-senses: #bea795; /* https://www.jotun.com/dk/da/decorative/interior/colours/2024-senses-interior */
 	--jotun-2511-moerkkvarts: #bcaba3; /* https://www.jotun.com/dk/da/b2c/colour-inspiration/colours/interior/2930001177501791_Interior.aspx */
 	--jotun-2202-sukkertop: #b9ada7; /* https://www.jotun.com/no/no/b2c/colour-inspiration/colours/interior/1100300500901791_Interior.aspx */
-	--jotun-12119-vintagebrown: #887d73;
 
 	/* lokum */
 	--jotun-10678-space: #d6cfbf; /* https://www.jotun.com/dk/da/decorative/interior/colours/10678-space-interior */
@@ -64,6 +63,8 @@
 	--jotun-10961-rawcanvas: #beaf97; /* https://www.jotun.com/dk/da/decorative/interior/colours/10961-raw-canvas-interior */
 	--jotun-10679-washedlinen: #c9c3b6; /* https://www.jotun.com/dk/da/decorative/interior/colours/10679-washed-linen-interior */
 	--jotun-10341-kalk: #d9d3c7; /* https://www.jotun.com/dk/da/decorative/interior/colours/10341-limestone-interior */
+	--jotun-1622-reflection: #ebe9e1; /* https://www.jotun.com/me/en/decorative/interior/colours/1622-reflection-interior */
+	--jotun-1931-kokos: #e3ddcd; /* https://www.jotun.com/dk/da/b2c/colour-inspiration/colours/interior/2930001566001791_Interior.aspx */
 
 	/* deco */
 	--jotun-9938-dempetsort: #494948; /* https://www.jotun.com/dk/da/decorative/exterior/colours/9938-dempet-sort-exterior */
@@ -78,7 +79,7 @@
 	--gangen-light: var(--jotun-7236-chi);
 
 	/* allroom */
-	--allroom: var(--jotun-1027-dempet);
+	--allroom: var(--jotun-1973-antikgra); /* --jotun-1027-dempet */
 	--allroom-light: var(--jotun-7236-chi);
 
 	/* stuen */
@@ -97,7 +98,7 @@
 	--fars-light: var(--jotun-0486-silke);
 
 	/* lokum */
-	--lokum: var(--jotun-10678-space);
+	--lokum: var(--jotun-10678-space); /* --jotun-1931-kokos */
 	--lokum-light: var(--jotun-9917-klassiskhvit);
 	
 }
@@ -222,6 +223,11 @@ section.stuen .photo {
 }
 section.kajs:before {
 	background-color: var(--kajs-dark);
+	/*
+	background-image: url('images/kajs/reinsvoll.webp');
+	background-repeat: repeat-y;
+	background-size: contain;
+	*/
 }
 section.kajs .photo {
 	background-color: var(--kajs-light);
@@ -229,25 +235,15 @@ section.kajs .photo {
 section.fars:before {
 	background-color: var(--fars-dark);
 	background-image: url('images/fars/kirkenes.webp');
-	background-repeat: no-repeat;
+	background-repeat: repeat-y;
 	background-size: contain;
 }
 section.fars .photo {
 	background-color: var(--fars-light);
 }
+section.fars .photo:first-of-type {
+	transform: translate(-10%, -10%);
+}
 section.lokum .photo {
 	background-color: var(--lokum-light);
 }
-/*
-section.kajs,
-section.fars {
-	background-repeat: no-repeat;
-	background-size: contain;
-}
-section.kajs {
-	background-image: url('images/kajs/reinsvoll.webp');
-}
-section.fars {
-	background-image: url('images/fars/kirkenes.webp');
-}
-*/

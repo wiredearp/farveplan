@@ -25,7 +25,7 @@
 	--jotun-9904-skumring: #e1e1dd; /* https://www.jotun.com/dk/da/decorative/interior/colours/9904-twilight-interior */
 	--jotun-0520-empire: #cbcbc8; /* https://www.jotun.com/dk/da/b2c/colour-inspiration/colours/interior/1904000002001791_Interior.aspx */
 	--jotun-1027-dempet: #d4d3cb; /* https://www.jotun.com/dk/da/b2c/colour-inspiration/colours/interior/1100150200501791_Interior.aspx */
-
+	--jotun-1624-letthet: #f2f1e8;
 
 	/* stuen */
 	--jotun-1875-sans: #e6dfce; /* https://www.jotun.com/dk/da/decorative/interior/colours/1875-sense-interior */
@@ -50,6 +50,8 @@
 	--jotun-12083-devine: #d2bea9; /* https://www.jotun.com/me/en/decorative/interior/colours/12083-devine-interior */
 	--jotun-2024-senses: #bea795; /* https://www.jotun.com/dk/da/decorative/interior/colours/2024-senses-interior */
 	--jotun-2511-moerkkvarts: #bcaba3; /* https://www.jotun.com/dk/da/b2c/colour-inspiration/colours/interior/2930001177501791_Interior.aspx */
+	--jotun-2202-sukkertop: #b9ada7; /* https://www.jotun.com/no/no/b2c/colour-inspiration/colours/interior/1100300500901791_Interior.aspx */
+	--jotun-12119-vintagebrown: #887d73;
 
 	/* lokum */
 	--jotun-10678-space: #d6cfbf; /* https://www.jotun.com/dk/da/decorative/interior/colours/10678-space-interior */
@@ -66,33 +68,41 @@
 	/* deco */
 	--jotun-9938-dempetsort: #494948; /* https://www.jotun.com/dk/da/decorative/exterior/colours/9938-dempet-sort-exterior */
 	--jotun-9917-klassiskhvit: #f0efe9; /* https://www.jotun.com/dk/da/decorative/interior/colours/9918-classic-white-interior */
-	--jotun-7236-jazzwhite: #f3f4ee; /* https://www.jotun.com/me/en/decorative/interior/colours/7236-jazz-white-interior */
 	--jotun-7236-chi: #f3f4ee; /* https://www.jotun.com/dk/da/decorative/interior/colours/7236-jazz-white-interior */
 }
 
 :root {
+
+	/* gangen */
 	--gangen: var(--jotun-1024-tidslos);
 
+	/* allroom */
 	--allroom: var(--jotun-1027-dempet);
+	--allroom-light: var(--jotun-7236-chi);
 
+	/* stuen */
 	--stuen: var(--jotun-1276-soft);
 	--stuen-dark: var(--jotun-12125-impression);
+	--stuen-light: var(--jotun-0486-silke);
 
+	/* kajs */
 	--kajs: var(--jotun-8118-lovsal);
 	--kajs-dark: var(--jotun-6379-cityscape);
-	--kajs-light: var(--jotun-12123-contemporarywhite);
+	--kajs-light: var(--jotun-0486-silke);
 
+	/* fars */
 	--fars: var(--jotun-20119-transparentpink);
-	--fars-dark: #bcaba3; 
+	--fars-dark: var(--jotun-12120-desertpink); 
+	--fars-light: var(--jotun-9917-klassiskhvit);
 
+	/* lokum */
 	--lokum: var(--jotun-10678-space);
-
-	--dark: var(--jotun-9938-dempetsort);
-
+	--lokum-light: var(--jotun-9917-klassiskhvit);
 	
 }
 :root {
 	--light: var(--jotun-7236-chi);
+	--dark: var(--jotun-9938-dempetsort);
 	--height: 100vh; /* tweaked JS */
 }
 
@@ -197,14 +207,32 @@ section:before {
 	bottom: 0;
 	width: 31.8vw;
 }
+section.allroom .photo {
+	background-color: var(--allroom-light);
+}
 section.stuen:before {
 	background-color: var(--jotun-12125-impression);
+}
+section.stuen .photo {
+	background-color: var(--stuen-light);
 }
 section.kajs:before {
 	background-color: var(--kajs-dark);
 }
+section.kajs .photo {
+	background-color: var(--kajs-light);
+}
 section.fars:before {
 	background-color: var(--fars-dark);
+	background-image: url('images/fars/kirkenes.webp');
+	background-repeat: no-repeat;
+	background-size: contain;
+}
+section.fars .photo {
+	background-color: var(--fars-light);
+}
+section.lokum .photo {
+	background-color: var(--lokum-light);
 }
 /*
 section.kajs,

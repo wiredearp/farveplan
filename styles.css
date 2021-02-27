@@ -215,6 +215,19 @@ section.gangen .photo {
 section.allroom .photo {
 	background-color: var(--allroom-light);
 }
+section.allroom .idasen {
+	display: inline-block;
+	position: absolute;
+	top: calc(0.1 * var(--height));
+	left: 10vw;
+}
+section.allroom .idasen photo,
+section.allroom .idasen img {
+	display: block;
+	max-width: 40vw;
+	max-height: calc(calc(0.8 * var(--height)) - 80px);
+	transform: scaleX(-1);
+}
 section.stuen:before {
 	background-color: var(--jotun-12125-impression);
 }
@@ -223,11 +236,6 @@ section.stuen .photo {
 }
 section.kajs:before {
 	background-color: var(--kajs-dark);
-	/*
-	background-image: url('images/kajs/reinsvoll.webp');
-	background-repeat: repeat-y;
-	background-size: contain;
-	*/
 }
 section.kajs .photo {
 	background-color: var(--kajs-light);

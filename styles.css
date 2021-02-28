@@ -25,6 +25,13 @@
 	--jotun-9904-skumring: #e1e1dd; /* https://www.jotun.com/dk/da/decorative/interior/colours/9904-twilight-interior */
 	--jotun-0520-empire: #cbcbc8; /* https://www.jotun.com/dk/da/b2c/colour-inspiration/colours/interior/1904000002001791_Interior.aspx */
 	--jotun-1027-dempet: #d4d3cb; /* https://www.jotun.com/dk/da/b2c/colour-inspiration/colours/interior/1100150200501791_Interior.aspx */
+	--jotun-2098-streif: #d5d5d2; /* https://www.jotun.com/dk/da/b2c/colour-inspiration/colours/interior/1100000144501791_Interior.aspx */
+	--jotun-0520-empire: #cbcbc8; /* https://www.jotun.com/dk/da/b2c/colour-inspiration/colours/interior/1904000002001791_Interior.aspx */
+	--jotun-8279-haze: #c7c9c2; /* https://www.jotun.com/dk/da/b2c/colour-inspiration/colours/interior/2930000632801791_Interior.aspx */
+	--jotun-1926-snedrabe: #c8c6bc; /* https://www.jotun.com/dk/da/b2c/colour-inspiration/colours/interior/2930000634401791_Interior.aspx */
+	--jotun-5081-fabrikk: #bbc0c0; /* https://www.jotun.com/dk/da/b2c/colour-inspiration/colours/interior/1100000157001791_interior.aspx */
+	--ncs-2502b-veddingegra: #b2b7ba; /* https://ncscolour.com/product/s-2502-b/ AND https://www.pinterest.com/pin/314759461457483262/ */
+	--ncs-1502b-xxx: #cbd1d1; /* https://ncscolour.com/product/s-1502-b/ */
 
 	/* stuen */
 	--jotun-1875-sans: #e6dfce; /* https://www.jotun.com/dk/da/decorative/interior/colours/1875-sense-interior */
@@ -79,7 +86,7 @@
 	--gangen-light: var(--jotun-7236-chi);
 
 	/* allroom */
-	--allroom: var(--jotun-1973-antikgra); /* --jotun-1027-dempet */
+	--allroom: var(--jotin-9915-morgendis); /* --jotun-1027-dempet */
 	--allroom-light: var(--jotun-7236-chi);
 
 	/* stuen */

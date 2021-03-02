@@ -30,6 +30,10 @@
 	--jotun-8279-haze: #c7c9c2; /* https://www.jotun.com/dk/da/b2c/colour-inspiration/colours/interior/2930000632801791_Interior.aspx */
 	--jotun-1926-snedrabe: #c8c6bc; /* https://www.jotun.com/dk/da/b2c/colour-inspiration/colours/interior/2930000634401791_Interior.aspx */
 	--jotun-5081-fabrikk: #bbc0c0; /* https://www.jotun.com/dk/da/b2c/colour-inspiration/colours/interior/1100000157001791_interior.aspx */
+	--jotun-9911-neutral: #bdbdb9; /* https://www.jotun.com/dk/da/decorative/interior/colours/9911-platinum-interior */
+	--jotun-9913-matrix: #7b7a79; /* https://www.jotun.com/dk/da/decorative/interior/colours/9913-matrix-interior */
+	--jotun-4744-sophisticatedblue: #454a4d; /* https://www.jotun.com/dk/da/decorative/interior/colours/4744-sophisticated-blue-interior */
+	--jotun-9938-dempetsort: #494948; /* https://www.jotun.com/dk/da/decorative/interior/colours/9938-blackened-black-interior */
 	--ncs-2502b-veddingegra: #b2b7ba; /* https://ncscolour.com/product/s-2502-b/ AND https://www.pinterest.com/pin/314759461457483262/ */
 	--ncs-1502b-xxx: #cbd1d1; /* https://ncscolour.com/product/s-1502-b/ */
 
@@ -86,7 +90,8 @@
 	--gangen-light: var(--jotun-7236-chi);
 
 	/* allroom */
-	--allroom: var(--jotin-9915-morgendis); /* --jotun-1027-dempet */
+	--allroom: var(--jotin-9915-morgendis); /* --jotin-9915-morgendis --jotun-1027-dempet */
+	--allroom-dark: var(--jotun-9911-neutral);
 	--allroom-light: var(--jotun-7236-chi);
 
 	/* stuen */
@@ -110,7 +115,7 @@
 	
 }
 :root {
-	--light: var(--jotun-7236-chi);
+	--light: lime;
 	--dark: var(--jotun-9938-dempetsort);
 	--height: 100vh; /* tweaked JS */
 }
@@ -221,19 +226,10 @@ section.gangen .photo {
 }
 section.allroom .photo {
 	background-color: var(--allroom-light);
+	/* border-bottom: 350px solid var(--jotun-9913-matrix); --jotun-4744-sophisticatedblue */
 }
-section.allroom .idasen {
-	display: inline-block;
-	position: absolute;
-	top: calc(0.1 * var(--height));
-	left: 10vw;
-}
-section.allroom .idasen photo,
-section.allroom .idasen img {
-	display: block;
-	max-width: 40vw;
-	max-height: calc(calc(0.8 * var(--height)) - 80px);
-	transform: scaleX(-1);
+section.allroom:before {
+	background-color: var(--allroom-dark);
 }
 section.stuen:before {
 	background-color: var(--jotun-12125-impression);

@@ -111,13 +111,14 @@
 	--stuen-light: var(--jotun-9917-klassiskhvit);
 
 	--kajs: var(--jotun-1024-tidslos);
-	--kajs-dark: var(--jotun-5503-naturalblue);
+	
 	--kajs-dark: var(--jotun-6378-iconic);
 	--kajs-dark: var(--jotun-8118-lovsal);
 	--kajs-light: var(--jotun-7236-chi);
 
 	--fars: var(--jotun-20119-transparentpink);
 	--fars-dark: var(--jotun-12120-desertpink); 
+	--fars-dark: var(--jotun-12806-rusticpink);
 	--fars-light: var(--jotun-9917-klassiskhvit);
 
 	--lokum: var(--jotun-10341-kalk);
@@ -215,12 +216,17 @@ img {
 }
 .photo figcaption {
 	padding-top: 20px;
+	text-align: right;
 }
 .photo picture,
 .photo picture img {
 	max-width: 40vw;
 	max-height: calc(calc(0.8 * var(--height)) - 80px);
 	border-radius: 2px;
+}
+.photo picture:nth-child(2),
+.photo picture:nth-child(3) {
+	display: none;
 }
 section:before {
 	content: '';
@@ -259,9 +265,6 @@ section.fars:before {
 }
 section.fars .photo {
 	background-color: var(--fars-light);
-}
-section.fars .photo:first-of-type {
-	transform: translate(-10%, -10%);
 }
 section.lokum .photo {
 	background-color: var(--lokum-light);

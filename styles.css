@@ -52,6 +52,7 @@
 	--jotun-0486-silke: #eae7db; /* https://www.jotun.com/dk/da/decorative/interior/colours/0486-early-rain-interior */
 	--jotun-12125-impression: #bba78e; /* https://www.jotun.com/no/no/decorative/interior/colours/12125-impression-interior */
 	--jotun-11174-curiousmind: #b7a992; /* https://www.jotun.com/dk/da/decorative/interior/colours/11174-curious-mind-interior */
+	--jotun-10246-velvet: #d6bd90; /* https://www.jotun.com/me/en/decorative/interior/colours/10246-velvet-interior */
 	
 	/* kajs */
 	--jotun-8118-lovsal: #c5c6b8; /* https://www.jotun.com/dk/da/decorative/interior/colours/8118-crisp-interior */
@@ -240,7 +241,6 @@ section.gangen .photo {
 }
 section.allroom .photo {
 	background-color: var(--allroom-light);
-	/* border-bottom: 350px solid var(--jotun-9913-matrix); --jotun-4744-sophisticatedblue */
 }
 section.allroom:before {
 	background-color: var(--allroom-dark);

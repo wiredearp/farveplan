@@ -59,6 +59,7 @@
 	--jotun-7628-treasure: #a3a798; /* https://www.jotun.com/me/en/decorative/interior/colours/7628-treasure-interior */
 	--jotun-7629-antiquegreen: #8a8f81; /* https://www.jotun.com/me/en/decorative/interior/colours/7629-antique-green-interior */
 	--jotun-1624-skylight: #f2f1e8; /* https://www.jotun.com/me/en/decorative/interior/colours/1624-skylight-interior */
+	--jotun-6378-iconic: #a1aba6; /* https://www.jotun.com/dk/da/decorative/interior/colours/6378-iconic-interior */
 	--jotun-6379-cityscape: #8c9893; /* https://www.jotun.com/dk/da/decorative/interior/colours/6379-cityscape-interior */
 	--jotun-6378-iconic: #a1aba6; /* https://www.jotun.com/dk/da/decorative/interior/colours/6378-iconic-interior */
 	--jotun-12123-contemporarywhite: #e1daca; /* https://www.jotun.com/dk/da/decorative/interior/colours/12123-contemporary-white-interior */
@@ -97,53 +98,33 @@
 }
 
 :root {
-
-	--gangen: var(--jotun-1024-tidslos);
-	--gangen-light: var(--jotun-7236-chi);
-
-	--allroom: var(--jotin-9915-morgendis);
-	--allroom-dark: var(--jotun-9911-neutral);
-	--allroom-light: var(--jotun-9904-skumring);
-
-	--stuen: var(--jotun-1276-soft);
-	--stuen-dark: var(--jotun-12125-impression);
-	--stuen-light: var(--jotun-0486-silke);
-
-	--kajs: var(--jotun-8118-lovsal);
-	--kajs-dark: var(--jotun-6379-cityscape);
-	--kajs-light: var(--jotun-0486-silke);
-
-	--fars: var(--jotun-20119-transparentpink);
-	--fars-dark: var(--jotun-12120-desertpink); 
-	--fars-light: var(--jotun-0486-silke);
-
-	--lokum: var(--jotun-10678-space); /* --jotun-1931-kokos */
-	--lokum-light: var(--jotun-9917-klassiskhvit);
-}
-
-:root.alt {
 	
 	--gangen: var(--jotun-1624-letthet);
-	--gangen-light: var(--jotun-7236-chi);
+	--gangen-light: var(--jotun-9917-klassiskhvit);
 
 	--allroom: var(--jotun-1928-sommersne);
 	--allroom-dark: var(--jotun-10678-space);
-	--allroom-light: var(--jotun-7236-chi);
+	--allroom-light: var(--jotun-9917-klassiskhvit);
 
 	--stuen: var(--jotun-0486-silke);
 	--stuen-dark: var(--jotun-1276-soft);
-	--stuen-light: var(--jotun-7236-chi);
+	--stuen-light: var(--jotun-9917-klassiskhvit);
 
 	--kajs: var(--jotun-1024-tidslos);
 	--kajs-dark: var(--jotun-5503-naturalblue);
+	--kajs-dark: var(--jotun-6378-iconic);
+	--kajs-dark: var(--jotun-8118-lovsal);
 	--kajs-light: var(--jotun-7236-chi);
 
+	--fars: var(--jotun-20119-transparentpink);
+	--fars-dark: var(--jotun-12120-desertpink); 
+	--fars-light: var(--jotun-9917-klassiskhvit);
+
 	--lokum: var(--jotun-10341-kalk);
+	--lokum-light: var(--jotun-9917-klassiskhvit);
 }
 
-
 :root {
-	--light: lime;
 	--dark: var(--jotun-9938-dempetsort);
 	--height: 100vh; /* tweaked JS */
 }
@@ -158,7 +139,6 @@
 	background-color: var(--stuen);
 }
 .kajs {
-	/* https://www.jotun.com/dk/da/decorative/interior/inspiration/livingroom/jotun-8118-crisp-6379-cityscape-12123-contemporary-white-20162-mellow */
 	background-color: var(--kajs);
 }
 .lokum {
@@ -188,7 +168,8 @@ body {
 	color: var(--dark);	
 }
 main {
-	overflow: scroll;
+	overflow-y: scroll;
+	overflow-x: hidden;
 	scroll-snap-type: y mandatory;
 }
 section {
@@ -224,7 +205,6 @@ img {
 }
 .photo {
 	display: inline-block;
-	background-color: var(--light);
 	box-shadow: 8px 8px 24px rgba(0,0,0,0.25);
 	border-radius: 2px;
 	padding: 20px;

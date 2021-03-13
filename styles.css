@@ -219,6 +219,21 @@ img {
 .photo figcaption {
 	padding-top: 20px;
 	text-align: right;
+	font-size: 0;
+}
+.photo button {
+	appearance: none;
+	display: inline-block;
+	color: var(--dark);
+	font-family: inherit;
+	background-color: transparent;
+	border: 1px solid transparent;
+	border-radius: 2px;
+	padding: 4px 10px;
+	font-size: 16px;
+}
+.photo button.mark {
+	border-color: var(--jotun-4894-oceanair);
 }
 .photo picture,
 .photo picture img {

@@ -18,9 +18,13 @@ document.querySelectorAll('figure').forEach(figure => {
  * @param {NodeList<HTMLButtonElement>} buttons 
  */
 function setup(pictures, buttons) {
+	const show = index => (elm, i) => elm.style.display = i === index ? 'block' : 'none';
+	const mark = index => (elm, i) => elm.classList.toggle('mark', i === index);
+	buttons.forEach(mark(0));
 	buttons.forEach((button, index) => {
 		button.onclick = () => {
-			pictures.forEach((pic, i) => pic.style.display = i === index ? 'block' : 'none');
+			pictures.forEach(show(index));
+			buttons.forEach(mark(index));
 		};
 	});
 }

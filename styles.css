@@ -9,6 +9,7 @@
 }
 
 /* https://www.jotun.com/dk/da/b2c/colour-inspiration/colours/ */
+/* https://lady.inspirasjonsblogg.jotun.no/bli-kjent-med-de-nye-gronnfargene/ */
 /* https://www.jotun.com/me/en/decorative/interior/colours/colourcards/jotun-colour-collection-identity */
 
 :root {
@@ -56,6 +57,7 @@
 	
 	/* kajs */
 	--jotun-8118-lovsal: #c5c6b8; /* https://www.jotun.com/dk/da/decorative/interior/colours/8118-crisp-interior */
+	--jotun-7626-airygreen: #d8dbcf; /* https://www.jotun.com/no/no/decorative/interior/colours/7626-airy-green-interior */
 	--jotun-7629-refresh: #cacfc3; /* https://www.jotun.com/me/en/decorative/interior/colours/7627-refresh-interior */
 	--jotun-7628-treasure: #a3a798; /* https://www.jotun.com/me/en/decorative/interior/colours/7628-treasure-interior */
 	--jotun-7629-antiquegreen: #8a8f81; /* https://www.jotun.com/me/en/decorative/interior/colours/7629-antique-green-interior */
@@ -67,6 +69,8 @@
 	--jotun-1624-letthet: #f2f1e8; /* https://www.jotun.com/dk/da/decorative/interior/colours/1624-skylight-interior */
 	--jotun-5503-naturalblue: #88959a; /* https://www.jotun.com/dk/da/decorative/interior/colours/5503-natural-blue-interior */
 	--jotun-4894-oceanair: #9daaaf; /* https://www.jotun.com/me/en/decorative/interior/colours/4894-ocean-air-interior */
+	--jotun-5452-nordicbreeze: #bbc6c8; /* https://www.jotun.com/dk/da/decorative/interior/colours/5452-nordic-breeze-interior */
+	--jotun-8478-palegreen: #babaa5; /* https://www.jotun.com/no/no/decorative/interior/colours/8478-pale-green-interior */
 
 	/* fars */
 	--jotun-20119-transparentpink: #dacec0; /* https://www.jotun.com/dk/da/decorative/interior/colours/20119-transparent-pink-interior */
@@ -112,14 +116,11 @@
 	--stuen-light: var(--jotun-9917-klassiskhvit);
 
 	--kajs: var(--jotun-1024-tidslos);
-	
-	--kajs-dark: var(--jotun-6378-iconic);
 	--kajs-dark: var(--jotun-8118-lovsal);
 	--kajs-light: var(--jotun-7236-chi);
 
 	--fars: var(--jotun-20119-transparentpink);
-	--fars-dark: var(--jotun-12120-desertpink); 
-	--fars-dark: var(--jotun-12806-rusticpink);
+	--fars-dark: var(--jotun-12120-desertpink);  
 	--fars-light: var(--jotun-9917-klassiskhvit);
 
 	--lokum: var(--jotun-10341-kalk);
@@ -251,21 +252,21 @@ section.stuen:before {
 section.stuen .photo {
 	background-color: var(--stuen-light);
 }
-section.kajs:before {
-	background-color: var(--kajs-dark);
-}
 section.kajs .photo {
 	background-color: var(--kajs-light);
-}
-section.fars:before {
-	background-color: var(--fars-dark);
-	background-image: url('images/fars/kirkenes.webp');
-	background-repeat: repeat-y;
-	background-size: contain;
 }
 section.fars .photo {
 	background-color: var(--fars-light);
 }
 section.lokum .photo {
 	background-color: var(--lokum-light);
+}
+section.kajs:before {
+	background-color: var(--kajs-dark);
+}
+section.fars:before {
+	background-color: var(--fars-dark);
+	background-image: url('images/fars/kirkenes.webp');
+	background-repeat: repeat-y;
+	background-size: contain;
 }

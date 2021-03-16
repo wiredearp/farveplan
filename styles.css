@@ -105,7 +105,6 @@
 	
 	--gangen: var(--jotun-1624-letthet);
 	--gangen-light: var(--jotun-9917-klassiskhvit);
-
 	
 	--allroom: var(--jotun-1928-sommersne);
 	--allroom: var(--jotun-8394-hvitpoesi);
@@ -119,6 +118,7 @@
 
 	--kajs: var(--jotun-1024-tidslos);
 	--kajs-dark: var(--jotun-8118-lovsal);
+	--kajs-dark: var(--jotun-1973-antikgra);
 	--kajs-light: var(--jotun-7236-chi);
 
 	--fars: var(--jotun-20119-transparentpink);

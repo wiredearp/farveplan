@@ -22,7 +22,6 @@
 	--jotun-1973-antikgra: #bebcb2; /* https://www.jotun.com/dk/da/decorative/interior/colours/1973-objective-interior */
 	--jotun-1391-lysantikgra: #d4d3c8; /* https://www.jotun.com/dk/da/decorative/interior/colours/1391-bare-interior */
 	--jotin-9915-morgendis: #d4d4cf; /* https://www.jotun.com/dk/da/decorative/interior/colours/9915-oxford-river-interior */
-	--jotun-8470-smoothwhite: #cecbc0; /* https://www.jotun.com/dk/da/decorative/interior/colours/8470-smooth-white-interior */
 	--jotun-9904-skumring: #e1e1dd; /* https://www.jotun.com/dk/da/decorative/interior/colours/9904-twilight-interior */
 	--jotun-0520-empire: #cbcbc8; /* https://www.jotun.com/dk/da/b2c/colour-inspiration/colours/interior/1904000002001791_Interior.aspx */
 	--jotun-1027-dempet: #d4d3cb; /* https://www.jotun.com/dk/da/b2c/colour-inspiration/colours/interior/1100150200501791_Interior.aspx */
@@ -40,9 +39,10 @@
 	--jotun-10249-sober: #79736d; /* https://www.jotun.com/dk/da/decorative/interior/colours/10249-vandyke-brown-interior */
 	--jotun-1434-elegant: #605d58; /* https://www.jotun.com/dk/da/decorative/interior/colours/1434-elegant-interior */
 	--jotun-6325-balance: #717e79; /* https://www.jotun.com/dk/da/decorative/interior/colours/6325-balance-interior */
-	--jotun-1927-kjerne: #d1cec6; /* https://www.jotun.com/dk/da/decorative/interior/colours/1927-stone-interior */
-	--jotun-8394-hvitpoesi: #dfdfd7; /* rgb(223,223,215) https://www.jotun.com/dk/da/decorative/interior/colours/8394-white-poetry-interior */
+	--jotun-1927-kjerne: #d1cec6; /* https://www.jotun.com/dk/da/decorative/interior/colours/1927-stone-interior */	
+	--jotun-8470-smoothwhite: #cecbc0; /* https://www.jotun.com/dk/da/decorative/interior/colours/8470-smooth-white-interior */
 	--jotun-1928-sommersne: #e4e2d7; /* rgb(228,226,215) https://www.jotun.com/dk/da/decorative/interior/colours/1928-summer-snow-interior */
+	--jotun-8394-hvitpoesi: #dfdfd7; /* rgb(223,223,215) https://www.jotun.com/dk/da/decorative/interior/colours/8394-white-poetry-interior */
 	--jotun-7237-nostalgi: #d2ddca;  /* rgb(210,221,202) https://www.jotun.com/dk/da/b2c/colour-inspiration/colours/interior/1100000025101791_Interior.aspx */
 	--ncs-2502b-veddingegra: #b2b7ba; /* https://ncscolour.com/product/s-2502-b/ AND https://www.pinterest.com/pin/314759461457483262/ */
 
@@ -106,11 +106,11 @@
 	--gangen: var(--jotun-1624-letthet);
 	--gangen-light: var(--jotun-9917-klassiskhvit);
 	
-	--allroom: var(--jotun-1928-sommersne);
-	--allroom: var(--jotun-8394-hvitpoesi);
+	--allroom: var(--jotun-8470-smoothwhite);
+	--allroom: var(--jotun-12123-contemporarywhite);
 	--allroom-dark: var(--jotun-10679-washedlinen);
+	--allroom-accent: var(--jotun-7237-nostalgi);
 	--allroom-light: var(--jotun-9917-klassiskhvit);
-	--allroom-light: var(--jotun-7236-chi);
 
 	--stuen: var(--jotun-0486-silke);
 	--stuen-dark: var(--jotun-1276-soft);

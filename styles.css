@@ -40,7 +40,7 @@
 	--jotun-1434-elegant: #605d58; /* https://www.jotun.com/dk/da/decorative/interior/colours/1434-elegant-interior */
 	--jotun-6325-balance: #717e79; /* https://www.jotun.com/dk/da/decorative/interior/colours/6325-balance-interior */
 	--jotun-1927-kjerne: #d1cec6; /* https://www.jotun.com/dk/da/decorative/interior/colours/1927-stone-interior */	
-	--jotun-8470-smoothwhite: #cecbc0; /* https://www.jotun.com/dk/da/decorative/interior/colours/8470-smooth-white-interior */
+	--jotun-8470-smoothwhite: #cecbc0; /* https://www.interiorbutikker.no/l/a10-hjem-malt-i-jotun-smooth-white-8470/ https://www.jotun.com/dk/da/decorative/interior/colours/8470-smooth-white-interior */
 	--jotun-1928-sommersne: #e4e2d7; /* rgb(228,226,215) https://www.jotun.com/dk/da/decorative/interior/colours/1928-summer-snow-interior */
 	--jotun-8394-hvitpoesi: #dfdfd7; /* rgb(223,223,215) https://www.jotun.com/dk/da/decorative/interior/colours/8394-white-poetry-interior */
 	--jotun-7237-nostalgi: #d2ddca;  /* rgb(210,221,202) https://www.jotun.com/dk/da/b2c/colour-inspiration/colours/interior/1100000025101791_Interior.aspx */
@@ -104,26 +104,27 @@
 :root {
 	
 	--gangen: var(--jotun-1624-letthet);
+	--gangen: var(--jotun-1928-sommersne);
 	--gangen-light: var(--jotun-9917-klassiskhvit);
 	
-	--allroom: var(--jotun-8470-smoothwhite);
-	--allroom: var(--jotun-12123-contemporarywhite);
-	--allroom-dark: var(--jotun-10679-washedlinen);
+	--allroom: var(--jotun-8394-hvitpoesi);
+	--allroom: var(--jotun-1024-tidslos);
+	--allroom-dark: var(--jotun-8470-smoothwhite);
 	--allroom-accent: var(--jotun-7237-nostalgi);
+	--allroom-light: var(--jotun-1928-sommersne);
 	--allroom-light: var(--jotun-9917-klassiskhvit);
 
-	--stuen: var(--jotun-0486-silke);
+	--stuen: var(--jotun-12123-contemporarywhite);
 	--stuen-dark: var(--jotun-1276-soft);
-	--stuen-light: var(--jotun-9917-klassiskhvit);
+	--stuen-light: var(--jotun-0486-silke);
 
 	--kajs: var(--jotun-1024-tidslos);
-	--kajs-dark: var(--jotun-8118-lovsal);
 	--kajs-dark: var(--jotun-1973-antikgra);
 	--kajs-light: var(--jotun-7236-chi);
 
-	--fars: var(--jotun-20119-transparentpink);
-	--fars-dark: var(--jotun-12120-desertpink);  
-	--fars-light: var(--jotun-9917-klassiskhvit);
+	--fars: var(--jotun-8118-lovsal);
+	--fars-dark: var(--jotun-7628-treasure);
+	--fars-light: var(--jotun-12123-contemporarywhite);
 
 	--lokum: var(--jotun-10341-kalk);
 	--lokum-light: var(--jotun-9917-klassiskhvit);

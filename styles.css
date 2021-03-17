@@ -17,6 +17,7 @@
 	/* gangen */
 	--jotun-1624-letthet: #f2f1e8; /* https://www.jotun.com/dk/da/decorative/interior/colours/1624-skylight-interior */
 	--jotun-1024-tidslos: #e0ddd2; /* https://www.jotun.com/dk/da/decorative/interior/colours/1024-timeless-interior */	
+	--jotun-1391-lysklitgra: #d4d3c8; /* https://www.jotun.com/dk/da/decorative/interior/colours/1391-bare-interior */
 
 	/* allroom */
 	--jotun-1973-antikgra: #bebcb2; /* https://www.jotun.com/dk/da/decorative/interior/colours/1973-objective-interior */
@@ -79,13 +80,18 @@
 	--jotun-2024-senses: #bea795; /* https://www.jotun.com/dk/da/decorative/interior/colours/2024-senses-interior */
 	--jotun-2511-moerkkvarts: #bcaba3; /* https://www.jotun.com/dk/da/b2c/colour-inspiration/colours/interior/2930001177501791_Interior.aspx */
 	--jotun-2202-sukkertop: #b9ada7; /* https://www.jotun.com/no/no/b2c/colour-inspiration/colours/interior/1100300500901791_Interior.aspx */
+	--jotun-7626-airygreen: #d8dbcf; /* https://www.jotun.com/dk/da/decorative/interior/colours/7626-airy-green-interior */
+	--jotun-1462-eveningsky: #84817a; /* https://www.jotun.com/me/en/decorative/exterior/colours/1462-evening-sky */
+	--jotun-1233-mohair: #a49a8b; /* https://www.jotun.com/dk/da/decorative/interior/colours/1233-mohair-interior */
 
 	/* lokum */
 	--jotun-10678-space: #d6cfbf; /* https://www.jotun.com/dk/da/decorative/interior/colours/10678-space-interior */
+	--jotun-1303-observe: #cebda2; /* https://www.jotun.com/dk/da/decorative/interior/colours/1303-observe-interior */
+	--jotun-12075-soothingbeige: #cac0af; /* https://www.jotun.com/dk/da/decorative/interior/colours/12075-soothing-beige-interior */
+	--jotun-12076-modernbeige: #bfb3a3; /* https://www.jotun.com/dk/da/decorative/interior/colours/12076-modern-beige-interior */
 	--jotun-12079-gleam: #e4dbc4; /* https://www.jotun.com/me/en/decorative/interior/colours/12079-gleam-interior */
 	--jotun-12080-softradience: #d9ccaf; /* https://www.jotun.com/me/en/decorative/interior/colours/12080-soft-radiance-interior */
 	--jotun-12176-silhouette: #bfb49c; /* https://www.jotun.com/no/no/decorative/interior/colours/12126-silhouette-interior */
-	--jotun-1303-observe: #cebda2; /* https://www.jotun.com/me/en/decorative/interior/colours/1303-observe-interior */
 	--jotun-11174-curiousmind: ##b7a992; /* https://www.jotun.com/dk/da/decorative/interior/colours/11174-curious-mind-interior */
 	--jotun-11173-humbleyellow: #d3c5ab; /* https://www.jotun.com/dk/da/decorative/interior/colours/11173-humble-yellow-interior */
 	--jotun-10961-rawcanvas: #beaf97; /* https://www.jotun.com/dk/da/decorative/interior/colours/10961-raw-canvas-interior */
@@ -95,6 +101,7 @@
 	--jotun-1931-kokos: #e3ddcd; /* https://www.jotun.com/dk/da/b2c/colour-inspiration/colours/interior/2930001566001791_Interior.aspx */
 	--jotun-10341-kalk: #d9d3c7; /* https://www.jotun.com/dk/da/decorative/interior/colours/10341-limestone-interior */
 
+
 	/* deco */
 	--jotun-9938-dempetsort: #494948; /* https://www.jotun.com/dk/da/decorative/exterior/colours/9938-dempet-sort-exterior */
 	--jotun-9917-klassiskhvit: #f0efe9; /* https://www.jotun.com/dk/da/decorative/interior/colours/9918-classic-white-interior */
@@ -103,31 +110,29 @@
 
 :root {
 	
-	--gangen: var(--jotun-1624-letthet);
 	--gangen: var(--jotun-1928-sommersne);
-	--gangen-light: var(--jotun-9917-klassiskhvit);
+	--gangen-light: var(--jotun-7236-chi);
 	
-	--allroom: var(--jotun-8394-hvitpoesi);
+	--allroom: var(--jotun-1391-lysklitgra);
 	--allroom: var(--jotun-1024-tidslos);
-	--allroom-dark: var(--jotun-8470-smoothwhite);
+	--allroom-dark: var(--jotun-10679-washedlinen);
+	--allroom-light: var(--jotun-7236-chi);
 	--allroom-accent: var(--jotun-7237-nostalgi);
-	--allroom-light: var(--jotun-1928-sommersne);
-	--allroom-light: var(--jotun-9917-klassiskhvit);
 
 	--stuen: var(--jotun-12123-contemporarywhite);
-	--stuen-dark: var(--jotun-1276-soft);
+	--stuen-dark: var(--jotun-12075-soothingbeige);
 	--stuen-light: var(--jotun-0486-silke);
 
-	--kajs: var(--jotun-1024-tidslos);
-	--kajs-dark: var(--jotun-1973-antikgra);
-	--kajs-light: var(--jotun-7236-chi);
+	--kajs: var(--jotun-7629-refresh);
+	--kajs-dark: var(--jotun-7628-treasure);
+	--kajs-light: var(--jotun-8394-hvitpoesi);
 
-	--fars: var(--jotun-8118-lovsal);
-	--fars-dark: var(--jotun-7628-treasure);
-	--fars-light: var(--jotun-12123-contemporarywhite);
+	--fars: var(--jotun-10678-space);
+	--fars-dark: var(--jotun-12076-modernbeige);
+	--fars-light: var(--jotun-0486-silke);
 
 	--lokum: var(--jotun-10341-kalk);
-	--lokum-light: var(--jotun-9917-klassiskhvit);
+	--lokum-light: var(--jotun-7236-chi);
 }
 
 :root {
@@ -284,7 +289,7 @@ section.kajs:before {
 }
 section.fars:before {
 	background-color: var(--fars-dark);
-	background-image: url('images/fars/kirkenes.webp');
+	background-image: url('images/kirkenes.webp');
 	background-repeat: repeat-y;
 	background-size: contain;
 }

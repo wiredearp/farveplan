@@ -117,8 +117,11 @@
 	
 	--allroom: var(--jotun-1391-lysklitgra);
 	--allroom: var(--jotun-1024-tidslos);
+	--allroom: var(--jotun-8470-smoothwhite);
 	--allroom-dark: var(--jotun-10679-washedlinen);
+	--allroom-dark: var(--jotun-1973-antikgra);
 	--allroom-light: var(--jotun-7236-chi);
+	--allroom-light: var(--jotun-1928-sommersne);
 	--allroom-accent: var(--jotun-7237-nostalgi);
 
 	--stuen: var(--jotun-12123-contemporarywhite);
@@ -222,6 +225,7 @@ img {
 	border-radius: 2px;
 	padding: 20px;
 	position: absolute;
+	z-index: 1;
 	bottom: calc(0.1 * var(--height));
 	right: 10vw;
 	margin: 0;
@@ -251,8 +255,7 @@ img {
 	max-height: calc(calc(0.8 * var(--height)) - 80px);
 	border-radius: 2px;
 }
-.photo picture:nth-child(2),
-.photo picture:nth-child(3) {
+.photo picture + picture {
 	display: none;
 }
 section:before {
@@ -262,6 +265,19 @@ section:before {
 	bottom: 0;
 	width: 31.8vw;
 }
+/*
+section:after {
+	content: '';
+  width: 0;
+	height: 0;
+	border-left: 31.8vw solid transparent;
+	border-right: 68.2vw solid transparent;
+	border-top: 200px solid var(--jotun-1024-tidslos);
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+*/
 section.gangen .photo {
 	background-color: var(--gangen-light);
 }

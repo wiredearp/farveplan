@@ -20,11 +20,15 @@ document.querySelectorAll('figure').forEach(figure => {
 function setup(pictures, buttons) {
 	const show = index => (elm, i) => elm.style.display = i === index ? 'block' : 'none';
 	const mark = index => (elm, i) => elm.classList.toggle('mark', i === index);
-	buttons.forEach(mark(0));
-	buttons.forEach((button, index) => {
-		button.onclick = () => {
-			pictures.forEach(show(index));
-			buttons.forEach(mark(index));
-		};
-	});
+	if (pictures.length === buttons.length) {
+		buttons.forEach(mark(0));
+		buttons.forEach((button, index) => {
+			button.onclick = () => {
+				pictures.forEach(show(index));
+				buttons.forEach(mark(index));
+			};
+		});
+	} else {
+		alert('Ouch');
+	}
 }

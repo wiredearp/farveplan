@@ -59,6 +59,8 @@
 	--jotun-8118-lovsal: #c5c6b8; /* https://www.jotun.com/dk/da/decorative/interior/colours/8118-crisp-interior */
 	--jotun-7626-airygreen: #d8dbcf; /* https://www.jotun.com/no/no/decorative/interior/colours/7626-airy-green-interior */
 	--jotun-7629-refresh: #cacfc3; /* https://www.jotun.com/me/en/decorative/interior/colours/7627-refresh-interior */
+	--jotun-7637-exhale: #b7bdb3; /* https://www.jotun.com/dk/da/decorative/interior/colours/7637-exhale-interior */
+	--jotun-7555-softmint: #c9d0c5; /* https://www.jotun.com/dk/da/decorative/interior/colours/7555-soft-mint-interior */
 	--jotun-7628-treasure: #a3a798; /* https://www.jotun.com/me/en/decorative/interior/colours/7628-treasure-interior */
 	--jotun-7629-antiquegreen: #8a8f81; /* https://www.jotun.com/me/en/decorative/interior/colours/7629-antique-green-interior */
 	--jotun-1624-skylight: #f2f1e8; /* https://www.jotun.com/me/en/decorative/interior/colours/1624-skylight-interior */
@@ -123,7 +125,7 @@
 	--stuen-dark: var(--jotun-12075-soothingbeige);
 	--stuen-light: var(--jotun-0486-silke);
 
-	--kajs: var(--jotun-7629-refresh);
+	--kajs: var(--jotun-8118-lovsal);
 	--kajs-dark: var(--jotun-7628-treasure);
 	--kajs-light: var(--jotun-8394-hvitpoesi);
 

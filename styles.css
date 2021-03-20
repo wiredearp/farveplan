@@ -19,6 +19,9 @@
 	--jotun-7236-chi: #f3f4ee; /* https://www.jotun.com/dk/da/decorative/interior/colours/7236-jazz-white-interior */
 	--jotun-9917-klassiskhvit: #f0efe9; /* https://www.jotun.com/dk/da/decorative/interior/colours/9918-classic-white-interior */
 	--jotun-1624-letthet: #f2f1e8; /* https://www.jotun.com/dk/da/decorative/interior/colours/1624-skylight-interior */
+	--jotun-8282-hvitpepper: #e4e2d6; /* https://www.jotun.com/dk/da/b2c/colour-inspiration/colours/interior/2930001117001791_Interior.aspx */
+	--jotun-8395-hvitkomfort: #ebe9de; /* https://www.jotun.com/dk/da/b2c/colour-inspiration/colours/interior/2930002214401791_Interior.aspx */
+	--jotun-1376-perle: #e4e0d3; /* https://www.jotun.com/dk/da/decorative/interior/colours/1376-mist-interior */
 
 	/* greige */
 	--jotun-1928-sommersne: #e4e2d7; /* rgb(228,226,215) https://www.jotun.com/dk/da/decorative/interior/colours/1928-summer-snow-interior */
@@ -125,9 +128,11 @@
 	--kajs-dark: var(--jotun-7628-treasure);
 	--kajs-light: var(--jotun-8394-hvitpoesi);
 
-	--fars: var(--jotun-10678-space);
+	--fars: var(--jotun-8470-smoothwhite);
 	--fars-dark: var(--jotun-12076-modernbeige);
-	--fars-light: var(--jotun-0486-silke);
+	--fars-light: var(--jotun-8282-hvitpepper);
+	--fars-light: var(--jotun-1024-tidslos);
+
 
 	--lokum: var(--jotun-10341-kalk);
 	--lokum-light: var(--jotun-9917-klassiskhvit);

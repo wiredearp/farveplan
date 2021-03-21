@@ -3,7 +3,6 @@
 	font-display: swap;
   font-weight: 100 900;
   font-style: oblique 0deg -10deg;
-  font-named-instance: 'Regular';
   src: url("fonts/Inter.var.woff2") format("woff2-variations"),
        url("fonts/Inter.var.woff2") format("woff2");
 }
@@ -23,7 +22,7 @@
 	--jotun-8395-hvitkomfort: #ebe9de; /* https://www.jotun.com/dk/da/b2c/colour-inspiration/colours/interior/2930002214401791_Interior.aspx */
 	--jotun-1376-perle: #e4e0d3; /* https://www.jotun.com/dk/da/decorative/interior/colours/1376-mist-interior */
 
-	/* greige */
+	/* greige and gray */
 	--jotun-1928-sommersne: #e4e2d7; /* rgb(228,226,215) https://www.jotun.com/dk/da/decorative/interior/colours/1928-summer-snow-interior */
 	--jotun-1024-tidslos: #e0ddd2; /* https://www.jotun.com/dk/da/decorative/interior/colours/1024-timeless-interior */	
 	--jotun-8394-hvitpoesi: #dfdfd7; /* rgb(223,223,215) https://www.jotun.com/dk/da/decorative/interior/colours/8394-white-poetry-interior */
@@ -32,12 +31,13 @@
 	--jotun-8470-smoothwhite: #cecbc0; /* https://www.interiorbutikker.no/l/a10-hjem-malt-i-jotun-smooth-white-8470/ https://www.jotun.com/dk/da/decorative/interior/colours/8470-smooth-white-interior */	
 	--jotun-1973-antikgra: #bebcb2; /* https://www.jotun.com/dk/da/decorative/interior/colours/1973-objective-interior */
 	--jotun-10182-hvitlin: #cfcac1; /* https://www.jotun.com/no/no/decorative/interior/colours/10182-white-linen-interior */
-
-	/* gray */
 	--jotun-9904-skumring: #e1e1dd; /* https://www.jotun.com/dk/da/decorative/interior/colours/9904-twilight-interior */
 	--jotun-2098-streif: #d5d5d2; /* https://www.jotun.com/dk/da/b2c/colour-inspiration/colours/interior/1100000144501791_Interior.aspx */
 	--jotin-9915-morgendis: #d4d4cf; /* https://www.jotun.com/dk/da/decorative/interior/colours/9915-oxford-river-interior */
 	--jotun-0520-empire: #cbcbc8; /* https://www.jotun.com/dk/da/b2c/colour-inspiration/colours/interior/1904000002001791_Interior.aspx */
+	--jotun-1877-valmuefro: #96938b; /* https://www.jotun.com/dk/da/decorative/interior/colours/1877-pebblestone-interior */
+	--jotun-8256-koksgra: #65665f;  /* https://www.jotun.com/dk/da/b2c/colour-inspiration/colours/exterior/1907000010601791_Exterior.aspx */
+	--jotun-1462-graskifer: #84817a; /* https://www.jotun.com/dk/da/decorative/interior/colours/1462-evening-sky-interior */
 
 	/* mint */
 	--jotun-7237-nostalgi: #d2ddca;  /* rgb(210,221,202) https://www.jotun.com/dk/da/b2c/colour-inspiration/colours/interior/1100000025101791_Interior.aspx */
@@ -52,8 +52,7 @@
 	--jotun-9913-matrix: #7b7a79; /* https://www.jotun.com/dk/da/decorative/interior/colours/9913-matrix-interior */
 	--jotun-4744-sophisticatedblue: #454a4d; /* https://www.jotun.com/dk/da/decorative/interior/colours/4744-sophisticated-blue-interior */
 	--jotun-9938-dempetsort: #494948; /* https://www.jotun.com/dk/da/decorative/interior/colours/9938-blackened-black-interior */
-	--jotun-8256-koksgra: #65665f;  /* https://www.jotun.com/dk/da/b2c/colour-inspiration/colours/exterior/1907000010601791_Exterior.aspx */
-	--jotun-1462-graskifer: #84817a; /* https://www.jotun.com/dk/da/decorative/interior/colours/1462-evening-sky-interior */
+	
 	--jotun-10249-sober: #79736d; /* https://www.jotun.com/dk/da/decorative/interior/colours/10249-vandyke-brown-interior */
 	--jotun-1434-elegant: #605d58; /* https://www.jotun.com/dk/da/decorative/interior/colours/1434-elegant-interior */
 	--jotun-6325-balance: #717e79; /* https://www.jotun.com/dk/da/decorative/interior/colours/6325-balance-interior */
@@ -129,8 +128,7 @@
 	--kajs-light: var(--jotun-8394-hvitpoesi);
 
 	--fars: var(--jotun-8470-smoothwhite);
-	--fars-dark: var(--jotun-12076-modernbeige);
-	--fars-light: var(--jotun-8282-hvitpepper);
+	--fars-dark: var(--jotun-1462-graskifer);
 	--fars-light: var(--jotun-1024-tidslos);
 
 

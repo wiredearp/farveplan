@@ -52,7 +52,7 @@
 	--jotun-9913-matrix: #7b7a79; /* https://www.jotun.com/dk/da/decorative/interior/colours/9913-matrix-interior */
 	--jotun-4744-sophisticatedblue: #454a4d; /* https://www.jotun.com/dk/da/decorative/interior/colours/4744-sophisticated-blue-interior */
 	--jotun-9938-dempetsort: #494948; /* https://www.jotun.com/dk/da/decorative/interior/colours/9938-blackened-black-interior */
-	
+	--jotun-1877-valmuefro: #96938b; /* https://www.jotun.com/dk/da/decorative/interior/colours/1877-pebblestone-interior */
 	--jotun-10249-sober: #79736d; /* https://www.jotun.com/dk/da/decorative/interior/colours/10249-vandyke-brown-interior */
 	--jotun-1434-elegant: #605d58; /* https://www.jotun.com/dk/da/decorative/interior/colours/1434-elegant-interior */
 	--jotun-6325-balance: #717e79; /* https://www.jotun.com/dk/da/decorative/interior/colours/6325-balance-interior */
@@ -128,9 +128,9 @@
 	--kajs-light: var(--jotun-8394-hvitpoesi);
 
 	--fars: var(--jotun-8470-smoothwhite);
-	--fars-dark: var(--jotun-1462-graskifer);
-	--fars-light: var(--jotun-1024-tidslos);
-
+	--fars-dark: var(--jotun-7637-exhale);
+	--fars-dark: var(--jotun-1877-valmuefro);
+	--fars-light: var(--jotun-8394-hvitpoesi);
 
 	--lokum: var(--jotun-10341-kalk);
 	--lokum-light: var(--jotun-9917-klassiskhvit);
@@ -290,9 +290,11 @@ section.kajs:before {
 }
 section.fars:before {
 	background-color: var(--fars-dark);
+	/*
 	background-image: url('images/kirkenes.webp');
 	background-repeat: repeat-y;
 	background-size: contain;
+	*/
 }
 
 

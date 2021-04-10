@@ -43,7 +43,7 @@
 	--jotun-7237-nostalgi: #d2ddca;  /* rgb(210,221,202) https://www.jotun.com/dk/da/b2c/colour-inspiration/colours/interior/1100000025101791_Interior.aspx */
 	--jotun-8238-pearsensation: #dbdfc4; /* https://www.jotun.com/me/en/decorative/exterior/colours/8238-8238 */
 
-	/* misc */	
+	/* misc */
 	--jotun-1832-skandinavisklys: #e7dfcd; /* https://www.jotun.com/no/no/decorative/interior/colours/1832-milky-way-interior */
 	--jotun-8279-haze: #c7c9c2; /* https://www.jotun.com/dk/da/b2c/colour-inspiration/colours/interior/2930000632801791_Interior.aspx */
 	--jotun-1926-snedrabe: #c8c6bc; /* https://www.jotun.com/dk/da/b2c/colour-inspiration/colours/interior/2930000634401791_Interior.aspx */
@@ -116,11 +116,12 @@
 	
 	--allroom: var(--jotun-1024-tidslos);
 	--allroom-dark: var(--jotun-10679-washedlinen);
-	--allroom-light: var(--jotun-9917-klassiskhvit);
+	--allroom-light: var(--jotun-7236-chi);
 	--allroom-accent: var(--jotun-7237-nostalgi);
 
 	--stuen: var(--jotun-12123-contemporarywhite);
 	--stuen-dark: var(--jotun-12075-soothingbeige);
+	--stuen-dark: var(--jotun-12176-silhouette);
 	--stuen-light: var(--jotun-0486-silke);
 
 	--kajs: var(--jotun-8118-lovsal);
@@ -133,7 +134,6 @@
 	--fars-light: var(--jotun-8394-hvitpoesi);
 
 	--lokum: var(--jotun-10341-kalk);
-	--lokum: var(--jotun-10679-washedlinen);
 	--lokum-light: var(--jotun-9917-klassiskhvit);
 }
 
@@ -291,11 +291,9 @@ section.kajs:before {
 }
 section.fars:before {
 	background-color: var(--fars-dark);
-	/*
 	background-image: url('images/kirkenes.webp');
 	background-repeat: repeat-y;
 	background-size: contain;
-	*/
 }
 
 

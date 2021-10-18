@@ -249,6 +249,10 @@ img {
 	right: 10vw;
 	margin: 0;
 }
+.photo img {
+	width: 100%;
+	object-fit: cover;
+}
 .photo figcaption {
 	padding-top: 20px;
 	text-align: right;

@@ -327,10 +327,9 @@ section.fars:before {
 	background-repeat: repeat-y;
 	background-size: contain;
 }
-/*
 section.kajs:before {
-	background-image: url('images/akustikpanel-01.webp');
+	background-image: url('images/akustikpanel.webp');
 	background-repeat: repeat-y;
 	background-size: contain;
+	background-position: -8px 0;
 }
-*/

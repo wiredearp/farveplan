@@ -1,6 +1,6 @@
 ((fit) => {
-	fit();
 	onresize = fit;
+	setTimeout(fit);
 })(function() {
 	document.documentElement.style.setProperty('--height', innerHeight + 'px');
 });
@@ -32,3 +32,9 @@ function setup(pictures, buttons) {
 		alert('Ouch');
 	}
 }
+
+document.addEventListener('click', (e) => {
+	const { hide, show } = e.target.dataset;
+	hide && (document.getElementById(hide).style.display = 'none');
+	show && (document.getElementById(show).style.display = 'block');
+})

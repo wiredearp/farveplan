@@ -45,6 +45,7 @@
 
 	/* alive */
 	--jotun-8118-lovsal: #c5c6b8; /* https://www.jotun.com/dk/da/decorative/interior/colours/8118-crisp-interior */
+	--jotun-8281-palelinden: #c6c6b6; /* https://www.jotun.com/no/no/decorative/interior/colours/8281-pale-linden-interior */
 	--jotun-7626-airygreen: #d8dbcf; /* https://www.jotun.com/no/no/decorative/interior/colours/7626-airy-green-interior */
 	--jotun-7629-refresh: #cacfc3; /* https://www.jotun.com/me/en/decorative/interior/colours/7627-refresh-interior */
 	--jotun-7637-exhale: #b7bdb3; /* https://www.jotun.com/dk/da/decorative/interior/colours/7637-exhale-interior */
@@ -58,7 +59,6 @@
 	--jotun-8493-greentea: #9f9b7c; /* https://www.jotun.com/dk/da/decorative/interior/colours/8493-green-tea-interior */
 	--jotun-8565-hope: #afad88; /* https://www.jotun.com/dk/da/decorative/interior/colours/8565-hope-interior */
 	--jotun-8302-lauerbaer: #b0ae96; /* https://www.jotun.com/no/no/decorative/interior/colours/8302-laurel-interior */
-	--jotun-8281-palelinden: #c6c6b6; /* https://www.jotun.com/no/no/decorative/interior/colours/8281-pale-linden-interior */
 	--jotun-1369-sol: ##ebd2a3; /* https://www.jotun.com/dk/da/decorative/interior/colours/1369-sun-interior */
 
 	/* misc */
@@ -327,9 +327,29 @@ section.fars:before {
 	background-repeat: repeat-y;
 	background-size: contain;
 }
-section.kajs:before {
+section.kajs:before,
+section.kajs-alt:before {
 	background-image: url('images/akustikpanel.webp');
 	background-repeat: repeat-y;
 	background-size: contain;
 	background-position: -8px 0;
+}
+section.kajs-alt {
+	display: none;
+}
+.toggle {
+	position: absolute;
+	top: 1vw;
+	right: 1vw;
+	appearance: none;
+	display: inline-block;
+	color: var(--dark);
+	font-family: inherit;
+	background-color: transparent;
+	border: 1px solid transparent;
+	border-radius: 2px;
+	padding: 4px 10px;
+	font-size: 16px;
+	cursor: pointer;
+	padding: 8px 12px;
 }

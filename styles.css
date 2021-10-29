@@ -142,17 +142,20 @@
 	--kajs: var(--jotun-8303-hvitlyng);
 	--kajs-dark: var(--jotun-8302-lauerbaer);
 	--kajs-light: var(--jotun-1928-sommersne);
+	
+	--kajs-alt1: var(--jotun-8282-hvitpepper);
+	--kajs-alt1-dark: var(--jotun-8118-lovsal); /* plus treasure */
+	--kajs-alt1-light: var(--jotun-7236-chi);
 
-	--kajs-alt: var(--jotun-8281-palelinden);
-	--kajs-alt-dark: var(--jotun-8426-dewygreen);
-	--kajs-alt-light: var(--jotun-1928-sommersne);
+	--kajs-alt2: var(--jotun-8281-palelinden);
+	--kajs-alt2-dark: var(--jotun-8426-dewygreen);
+	--kajs-alt2-light: var(--jotun-1928-sommersne);
 
-	--kajs-alt2: var(--jotun-8118-lovsal);
-	--kajs-alt2-dark: var(--jotun-7628-treasure);
-	--kajs-alt2-light: var(--jotun-8394-hvitpoesi);
+	--kajs-alt3: var(--jotun-8118-lovsal);
+	--kajs-alt3-dark: var(--jotun-7628-treasure);
+	--kajs-alt3-light: var(--jotun-8394-hvitpoesi);
 
 	--fars: var(--jotun-8470-smoothwhite);
-	--fars-dark: var(--jotun-7637-exhale);
 	--fars-dark: var(--jotun-1877-valmuefro);
 	--fars-light: var(--jotun-8394-hvitpoesi);
 
@@ -177,11 +180,14 @@
 .kajs {
 	background-color: var(--kajs);
 }
-.kajs-alt {
-	background-color: var(--kajs-alt);
+.kajs-alt1 {
+	background-color: var(--kajs-alt1);
 }
 .kajs-alt2 {
 	background-color: var(--kajs-alt2);
+}
+.kajs-alt3 {
+	background-color: var(--kajs-alt3);
 }
 .lokum {
 	background-color: var(--lokum);
@@ -317,8 +323,14 @@ section.kajs .photo {
 section.kajs-alt .photo {
 	background-color: var(--kajs-alt-light);
 }
+section.kajs-alt1 .photo {
+	background-color: var(--kajs-alt1-light);
+}
 section.kajs-alt2 .photo {
 	background-color: var(--kajs-alt2-light);
+}
+section.kajs-alt3 .photo {
+	background-color: var(--kajs-alt3-light);
 }
 section.fars .photo {
 	background-color: var(--fars-light);
@@ -332,8 +344,14 @@ section.kajs:before {
 section.kajs-alt:before {
 	background-color: var(--kajs-alt-dark);
 }
+section.kajs-alt1:before {
+	background-color: var(--kajs-alt1-dark);
+}
 section.kajs-alt2:before {
 	background-color: var(--kajs-alt2-dark);
+}
+section.kajs-alt3:before {
+	background-color: var(--kajs-alt3-dark);
 }
 section.fars:before {
 	background-color: var(--fars-dark);
@@ -342,15 +360,17 @@ section.fars:before {
 	background-size	: contain;
 }
 section.kajs:before,
-section.kajs-alt:before,
-section.kajs-alt2:before {
+section.kajs-alt1:before,
+section.kajs-alt2:before,
+section.kajs-alt3:before {
 	background-image: url('images/akustikpanel.webp');
 	background-repeat: repeat-y;
 	background-size: contain;
 	background-position: -8px 0;
 }
-section.kajs-alt,
-section.kajs-alt2 {
+section.kajs-alt1,
+section.kajs-alt2,
+section.kajs-alt3 {
 	display: none;
 }
 .toggle {
